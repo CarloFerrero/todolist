@@ -1,0 +1,13 @@
+.flex-main {
+  width: 100vw;
+  display: flex;
+  align-content: space-between;
+}
+
+@media only screen and (max-width: 945px) {
+  .flex-main {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+}

@@ -1,0 +1,148 @@
+/* layout */
+.todoPage-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  margin: 0% 6% 0 3%;
+  height: 100%;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  border: 1px solid var(--grey);
+  border-radius: 7px;
+  padding: 2%;
+}
+.task-form {
+  display: flex;
+  flex-direction: column;
+}
+.form-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.time-wrapper {
+  display: flex;
+}
+.mg20 {
+  margin-top: 20px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+
+/* inputs */
+#title-text::placeholder {
+  font-size: 20px;
+}
+#title-text {
+  font-size: 20px;
+  font-weight: 600;
+}
+#description-text::placeholder {
+  font-size: 15px;
+}
+#description-text {
+  font-family: "DM Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--grey);
+  resize: none;
+}
+.new-todo-input {
+  border: none;
+  background: none;
+  width: 100%;
+}
+.new-todo-input:focus-visible {
+  outline: none;
+}
+
+/* btn */
+#btn-submit-task {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0.4em 1em 0.4em 1em;
+  background: var(--black);
+  color: var(--white);
+  font-weight: 600;
+  border-radius: 7px;
+  border: none;
+  cursor: pointer;
+}
+.hidden {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+input[type="checkbox"] + label#oggi {
+  color: var(--blueTask);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0em 0.4em 0em 0.4em;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid var(--blueTask);
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label#oggi {
+  color: var(--white);
+  background-color: var(--blueTask);
+  font-style: normal;
+}
+input[type="checkbox"] + label#domani {
+  color: var(--salmon);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0em 0.4em 0em 0.4em;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid var(--salmon);
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label#domani {
+  color: var(--white);
+  background-color: var(--salmon);
+  font-style: normal;
+}
+input[type="checkbox"] + label#inarrivo {
+  color: var(--yellow);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0em 0.4em 0em 0.4em;
+  font-weight: 500;
+  border-radius: 7px;
+  border: 1px solid var(--yellow);
+  cursor: pointer;
+}
+input[type="checkbox"]:checked + label#inarrivo {
+  color: var(--white);
+  background-color: var(--yellow);
+  font-style: normal;
+}
+.v-center {
+  align-content: center;
+  display: flex;
+}
+
+@media only screen and (max-width: 945px) {
+  .todoPage-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100vh;
+    margin: 0% 6% 0 6%;
+    height: 100%;
+  }
+}
